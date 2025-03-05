@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: SpringDataJpa
+  datasource:
+    url: jdbc:postgresql://localhost:5432/workshops_zackdev
+    driver-class-name: org.postgresql.Driver
+    username: zack
+    password: dev
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
